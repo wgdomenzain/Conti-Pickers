@@ -15,6 +15,9 @@
 		D10E45EA1AF8FA3D0005814A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10E45E91AF8FA3D0005814A /* Images.xcassets */; };
 		D10E45ED1AF8FA3D0005814A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10E45EB1AF8FA3D0005814A /* LaunchScreen.xib */; };
 		D10E45F91AF8FA3D0005814A /* Conti_PickersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E45F81AF8FA3D0005814A /* Conti_PickersTests.m */; };
+		D10E46061AF8FBF90005814A /* Tab01.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E46051AF8FBF90005814A /* Tab01.m */; };
+		D10E46091AF8FC130005814A /* Tab02.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E46081AF8FC130005814A /* Tab02.m */; };
+		D10E460C1AF8FF750005814A /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E460B1AF8FF750005814A /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		D10E45F21AF8FA3D0005814A /* Conti-PickersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conti-PickersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10E45F71AF8FA3D0005814A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D10E45F81AF8FA3D0005814A /* Conti_PickersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conti_PickersTests.m; sourceTree = "<group>"; };
+		D10E46041AF8FBF90005814A /* Tab01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab01.h; sourceTree = "<group>"; };
+		D10E46051AF8FBF90005814A /* Tab01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab01.m; sourceTree = "<group>"; };
+		D10E46071AF8FC130005814A /* Tab02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab02.h; sourceTree = "<group>"; };
+		D10E46081AF8FC130005814A /* Tab02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab02.m; sourceTree = "<group>"; };
+		D10E460A1AF8FF750005814A /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		D10E460B1AF8FF750005814A /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +92,8 @@
 		D10E45D81AF8FA3D0005814A /* Conti-Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				D10E45DD1AF8FA3D0005814A /* AppDelegate.h */,
-				D10E45DE1AF8FA3D0005814A /* AppDelegate.m */,
-				D10E45E31AF8FA3D0005814A /* ViewController.h */,
-				D10E45E41AF8FA3D0005814A /* ViewController.m */,
+				D10E46021AF8FA520005814A /* Main */,
+				D10E46031AF8FA5F0005814A /* Controllers */,
 				D10E45E61AF8FA3D0005814A /* Main.storyboard */,
 				D10E45E91AF8FA3D0005814A /* Images.xcassets */,
 				D10E45EB1AF8FA3D0005814A /* LaunchScreen.xib */,
@@ -120,6 +127,30 @@
 				D10E45F71AF8FA3D0005814A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D10E46021AF8FA520005814A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D10E45DD1AF8FA3D0005814A /* AppDelegate.h */,
+				D10E45DE1AF8FA3D0005814A /* AppDelegate.m */,
+				D10E460A1AF8FF750005814A /* Declarations.h */,
+				D10E460B1AF8FF750005814A /* Declarations.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D10E46031AF8FA5F0005814A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D10E45E31AF8FA3D0005814A /* ViewController.h */,
+				D10E45E41AF8FA3D0005814A /* ViewController.m */,
+				D10E46041AF8FBF90005814A /* Tab01.h */,
+				D10E46051AF8FBF90005814A /* Tab01.m */,
+				D10E46071AF8FC130005814A /* Tab02.h */,
+				D10E46081AF8FC130005814A /* Tab02.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10E45DF1AF8FA3D0005814A /* AppDelegate.m in Sources */,
+				D10E46061AF8FBF90005814A /* Tab01.m in Sources */,
 				D10E45DC1AF8FA3D0005814A /* main.m in Sources */,
+				D10E460C1AF8FF750005814A /* Declarations.m in Sources */,
+				D10E46091AF8FC130005814A /* Tab02.m in Sources */,
 				D10E45E51AF8FA3D0005814A /* ViewController.m in Sources */,
 				D10E45E21AF8FA3D0005814A /* Conti_Pickers.xcdatamodeld in Sources */,
 			);
