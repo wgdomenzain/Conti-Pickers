@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Declarations.h"
+#import "GAITrackedViewController.h"
 
-@interface Tab01 : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+@interface Tab01 : GAITrackedViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 //Labels
 @property (strong, nonatomic) IBOutlet UILabel *lblResult;

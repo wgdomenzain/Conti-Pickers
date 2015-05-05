@@ -26,6 +26,11 @@ NSString    *stSelectedState;
     // Dispose of any resources that can be recreated.
 }
 //------------------------------------------------------------------
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Tab01 Screen";
+}
+//------------------------------------------------------------------
 - (void)initController
 {
     maStates    = [NSMutableArray arrayWithObjects: nInitialStates];
