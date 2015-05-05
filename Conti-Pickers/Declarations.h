@@ -21,7 +21,8 @@
 
 extern  NSMutableArray  *maStates;
 extern  NSMutableArray  *maCountries;
-extern NSMutableArray   *maOrderedCountries;
+extern  NSMutableArray  *maOrderedCountries;
+extern  NSMutableArray  *maStudentNames;
 
 @interface Declarations : NSObject
 

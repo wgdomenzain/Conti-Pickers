@@ -35,6 +35,7 @@
 		D10E464D1AF9202F0005814A /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E463F1AF9202F0005814A /* SBJsonTokeniser.m */; };
 		D10E464E1AF9202F0005814A /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E46411AF9202F0005814A /* SBJsonUTF8Stream.m */; };
 		D10E464F1AF9202F0005814A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E46431AF9202F0005814A /* SBJsonWriter.m */; };
+		D10E46521AF92B6E0005814A /* cellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D10E46511AF92B6E0005814A /* cellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		D10E46411AF9202F0005814A /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		D10E46421AF9202F0005814A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		D10E46431AF9202F0005814A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		D10E46501AF92B6E0005814A /* cellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellTableViewCell.h; sourceTree = "<group>"; };
+		D10E46511AF92B6E0005814A /* cellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				D10E46051AF8FBF90005814A /* Tab01.m */,
 				D10E46071AF8FC130005814A /* Tab02.h */,
 				D10E46081AF8FC130005814A /* Tab02.m */,
+				D10E46501AF92B6E0005814A /* cellTableViewCell.h */,
+				D10E46511AF92B6E0005814A /* cellTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				D10E46061AF8FBF90005814A /* Tab01.m in Sources */,
 				D10E46491AF9202F0005814A /* SBJsonStreamParserState.m in Sources */,
 				D10E45DC1AF8FA3D0005814A /* main.m in Sources */,
+				D10E46521AF92B6E0005814A /* cellTableViewCell.m in Sources */,
 				D10E460C1AF8FF750005814A /* Declarations.m in Sources */,
 				D10E46091AF8FC130005814A /* Tab02.m in Sources */,
 				D10E464F1AF9202F0005814A /* SBJsonWriter.m in Sources */,

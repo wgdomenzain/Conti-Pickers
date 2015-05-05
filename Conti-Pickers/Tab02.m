@@ -7,6 +7,8 @@
 //
 
 #import "Tab02.h"
+#import "Declarations.h"
+#import "cellTableViewCell.h"
 
 @interface Tab02 ()
 
@@ -29,9 +31,41 @@
     self.screenName = @"Tab02 Screen";
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger *)section
+/******************************************************************************
+ Table functions
+ ******************************************************************************/
+//-----------------------------------------
+//Table functions
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return u;
+    return 1;
 }
+//-------------------------------------------------------------------------------
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+//-------------------------------------------------------------------------------
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return  maStudentNames.count;
+}
+//-------------------------------------------------------------------------------
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"tableCell");
+    static NSString *CellIdentifier = @"tableCell";
+    
+    cellTableViewCell *cell = (cellTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil)
+    {
+        cell = [[cellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    cell.labelcell.text      = maStudentNames[indexPath.row];
+    return cell;
+}
+
 
 @end
