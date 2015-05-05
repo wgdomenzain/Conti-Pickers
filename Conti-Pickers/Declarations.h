@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBJson.h"
 
+//Post status
+#define nPostFail       0
+#define nPostSuccess    1
 
 //States and capitals
 #define     nInitialStates      @"Jalisco", @"Sinaloa",@"Sonora",@"Nayarit",@"Michoacán",nil
@@ -20,5 +24,8 @@ extern  NSMutableArray  *maCountries;
 extern NSMutableArray   *maOrderedCountries;
 
 @interface Declarations : NSObject
+
+- (void) postService;
+- (int) loadService;
 
 @end

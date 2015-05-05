@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "GAITrackedViewController.h"
 
-@interface Tab02 : GAITrackedViewController
+@interface Tab02 : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

@@ -33,7 +33,9 @@ NSString    *stSelectedState;
 //------------------------------------------------------------------
 - (void)initController
 {
-    maStates                    = [NSMutableArray arrayWithObjects: nInitialStates];
+    self.Declarations       = [[Declarations alloc] init];
+    
+    maStates                = [NSMutableArray arrayWithObjects: nInitialStates];
 
     maOrderedCountries      = [[NSMutableArray array] init];
     maOrderedCountries[0]   = [NSMutableArray arrayWithObjects: nInitialAmerica];
@@ -52,12 +54,12 @@ NSString    *stSelectedState;
     maOrderedCountries[2][2] = @"Beliced3dedkedkedkejdkjekjdkejkd2";
     
     NSLog(@"maOrderedCountries = %@", maOrderedCountries);
-    
 }
 //------------------------------------------------------------------
 - (IBAction)btnStatePressed:(id)sender
 {
     self.lblResult.text = stSelectedState;
+    [self.Declarations postService];
 }
 //------------------------------------------------------------------
 - (IBAction)btnDatePressed:(id)sender

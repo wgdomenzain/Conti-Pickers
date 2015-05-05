@@ -12,6 +12,10 @@
 
 @interface Tab01 : GAITrackedViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+//Variables
+@property (nonatomic,strong) Declarations *Declarations;
+
+
 //Labels
 @property (strong, nonatomic) IBOutlet UILabel *lblResult;
 
