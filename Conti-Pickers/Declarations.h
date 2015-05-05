@@ -11,8 +11,13 @@
 
 //States and capitals
 #define     nInitialStates      @"Jalisco", @"Sinaloa",@"Sonora",@"Nayarit",@"Michoacán",nil
+#define     nInitialAmerica     @"Mexico", @"Guatemala",@"Sonora",@"Nayarit",@"Michoacán",nil
+#define     nInitialEurope      @"España", @"Noruega",@"Sonora",@"Nayarit",nil
+#define     nInitialAsia        @"Japón", @"Sinaloa",@"Sonora",@"Nayarit",@"Michoacán",nil
 
 extern  NSMutableArray  *maStates;
+extern  NSMutableArray  *maCountries;
+extern NSMutableArray   *maOrderedCountries;
 
 @interface Declarations : NSObject
 

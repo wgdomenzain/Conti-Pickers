@@ -10,6 +10,11 @@
 
 NSMutableArray  *maStates;
 
+NSString        *mstExample[5][100];
+
+NSMutableArray  *maCountries;
+NSMutableArray  *maOrderedCountries;
+
 
 @implementation Declarations
 

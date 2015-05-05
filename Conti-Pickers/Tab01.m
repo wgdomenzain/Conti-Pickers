@@ -33,7 +33,26 @@ NSString    *stSelectedState;
 //------------------------------------------------------------------
 - (void)initController
 {
-    maStates    = [NSMutableArray arrayWithObjects: nInitialStates];
+    maStates                    = [NSMutableArray arrayWithObjects: nInitialStates];
+
+    maOrderedCountries      = [[NSMutableArray array] init];
+    maOrderedCountries[0]   = [NSMutableArray arrayWithObjects: nInitialAmerica];
+    maOrderedCountries[1]   = [NSMutableArray arrayWithObjects: nInitialEurope];
+    maOrderedCountries[2]   = [NSMutableArray arrayWithObjects: nInitialAsia];
+    
+    NSLog(@"maOrderedCountries = %@", maOrderedCountries);
+    
+    NSLog(@"maOrderedCountries 0 = %d", (int)[maOrderedCountries[0] count]);
+    NSLog(@"maOrderedCountries 1 = %d", (int)[maOrderedCountries[1] count]);
+    
+    
+    maOrderedCountries       = [[NSMutableArray arrayWithArray:maOrderedCountries] mutableCopy];
+    maOrderedCountries[0][2] = @"Belice";
+    maOrderedCountries[1][2] = @"Belice1";
+    maOrderedCountries[2][2] = @"Beliced3dedkedkedkejdkjekjdkejkd2";
+    
+    NSLog(@"maOrderedCountries = %@", maOrderedCountries);
+    
 }
 //------------------------------------------------------------------
 - (IBAction)btnStatePressed:(id)sender
