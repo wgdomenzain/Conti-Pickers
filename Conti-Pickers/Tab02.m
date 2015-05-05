@@ -7,7 +7,6 @@
 //
 
 #import "Tab02.h"
-#import "Declarations.h"
 #import "cellTableViewCell.h"
 
 @interface Tab02 ()
@@ -18,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.Declarations       = [[Declarations alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +30,32 @@
     self.screenName = @"Tab02 Screen";
 }
 
+
+- (IBAction)btnRefreshPressed:(id)sender
+{
+//-------------------------------------------------------------------------------
+//Get post
+    [self.activityView startAnimating];
+    NSOperationQueue *queue                 = [NSOperationQueue new];
+    
+    NSInvocationOperation *opGetData        = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(getPost) object:nil];
+    [queue addOperation:opGetData];
+    
+    NSInvocationOperation *opDoneGetData    = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(donePost) object:nil];
+    [opDoneGetData addDependency:opGetData];
+    [queue addOperation:opDoneGetData];
+}
+//-------------------------------------------------------------------------------
+- (void)getPost
+{
+    [self.Declarations loadService];
+}
+//-------------------------------------------------------------------------------
+- (void)donePost
+{
+    [self.tblStudents reloadData];
+    [self.activityView stopAnimating];
+}
 /******************************************************************************
  Table functions
  ******************************************************************************/
